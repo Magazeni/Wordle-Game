@@ -105,3 +105,22 @@ body{
 .keyboard button:hover {
     background-color: burlywood;
 }
+
+.word-green {
+   background-color: #52BE80 !important;
+   color: white !important;
+
+}
+
+.word-yellow {
+   background-color:  #f8c471 !important;
+   color: white !important;
+
+}
+ 
+.word-grey {
+   background-color:  #839192 !important;
+   color: white !important;
+
+}
+
