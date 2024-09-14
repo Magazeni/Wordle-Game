@@ -47,11 +47,26 @@ function enterWord(){
         //console.log(count);
     }
 }
+ 
+function deleteletter() {
+   const letterElements = wordElements[row-1].querySelectorAll('.word');
+   
+   for (let index = letterElements.length - 1; index >=0; index--) {
+    const element = letterElements[index];
+    if (element.innerText !== '') {
+        element.innerText = '';
+        letter -=1;
+        break;
+    }
+    
+   }
+}
+
 function keypress(key) {
 if (key.toLowerCase() === 'enter'){
    enterWord();
 } else if (key.toLowerCase() === 'del' ){
-    //deleteletter();
+    deleteletter();
 }else{
     populateword(key);
 }
